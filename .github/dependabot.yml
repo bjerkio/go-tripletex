@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/go-openapi/errors
+    versions:
+    - 0.20.0
+  - dependency-name: github.com/go-openapi/swag
+    versions:
+    - 0.19.13
+    - 0.19.14
+  - dependency-name: github.com/go-openapi/runtime
+    versions:
+    - 0.19.26
+    - 0.19.27
+  - dependency-name: github.com/go-openapi/validate
+    versions:
+    - 0.20.1
